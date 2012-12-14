@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="dataSourceBizLogTarget"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://127.0.0.1:3306/bizlog?useUnicode=true&amp;characterEncoding=UTF-8</value>
+		</property>
+		<property name="username">
+			<value>bizlog</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceBizLogSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://bizlog.mysql:3306/bizlog?useUnicode=true&amp;characterEncoding=UTF-8</value>
+		</property>
+		<property name="username">
+			<value>for_dev</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceConfig"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://config.mysql:3306/work_sheet?useUnicode=true&amp;characterEncoding=UTF-8</value>
+		</property>
+		<property name="username">
+			<value>for_dev</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdonline"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@sadonline.oracledb:1521:adonline</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdreport"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@adreport.oracledb:1521:adreport</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceBI"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@adbi.oracledb:1521:addw</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdstat"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@adstat.oracledb:1521:adstat</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdunion"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@adunion.oracledb:1521:adunion</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc1"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc11.oracledb:1521:adcpc11</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc2"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc12.oracledb:1521:adcpc12</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc3"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc13.oracledb:1521:adcpc13</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc4"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc14.oracledb:1521:adcpc14</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc5"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc15.oracledb:1521:adcpc15</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc6"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc16.oracledb:1521:adcpc16</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc7"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc17.oracledb:1521:adcpc17</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceAdcpc8"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" singleton="true" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>oracle.jdbc.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@s1adcpc18.oracledb:1521:adcpc18</value>
+		</property>
+		<property name="username">
+			<value>FOR_DEV</value>
+		</property>
+		<property name="password">
+			<value>sogouAD!@#</value>
+		</property>
+	</bean>
+
+</beans>
+
