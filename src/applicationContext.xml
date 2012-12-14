@@ -2,7 +2,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-	<bean id="dataSourceBizLogTarget"
+	<bean id="dataSourceHLS"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		abstract="false" singleton="true" lazy-init="default" autowire="default"
 		dependency-check="default">
@@ -13,10 +13,10 @@
 			<value>jdbc:mysql://127.0.0.1:3306/hls?useUnicode=true&amp;characterEncoding=UTF-8</value>
 		</property>
 		<property name="username">
-			<value>bizlog</value>
+			<value>root</value>
 		</property>
 		<property name="password">
-			<value>sogouAD!@#</value>
+			<value>jenray</value>
 		</property>
 	</bean>
 
