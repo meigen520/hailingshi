@@ -10,7 +10,7 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="url">
-			<value>jdbc:mysql://127.0.0.1:3306/bizlog?useUnicode=true&amp;characterEncoding=UTF-8</value>
+			<value>jdbc:mysql://127.0.0.1:3306/hls?useUnicode=true&amp;characterEncoding=UTF-8</value>
 		</property>
 		<property name="username">
 			<value>bizlog</value>
